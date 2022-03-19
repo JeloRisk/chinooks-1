@@ -1,25 +1,19 @@
 /** @format */
-
+/* Start of Common for every html file*/
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Poppins, sans-serif;
-}
-
-*,
-::after,
-::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-
 	font-size: 100%;
+}
 
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 .header {
 	overflow: hidden;
@@ -56,15 +50,6 @@ li a {
 	text-decoration: none;
 }
 
-.head-section p {
-	position: absolute;
-	font-size: 24px;
-	top: 40%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
 .header,
 footer,
 section {
@@ -80,11 +65,163 @@ footer {
 .main-section {
 	padding: 10px 75px;
 }
+
+/*------------------------------------------ */
+/* End of Common style for every html file*/
+/*------------------------------------------ */
+
+/*------------------------------------------------------ */
+/* Start of Location Page(location.html) style properties*/
+/*------------------------------------------------------ */
+.head-section {
+	color: white;
+	position: relative;
+	font-family: Verdana, sans-serif;
+	width: 100%;
+	height: 300px;
+	background-color: #f79c14;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/GOOGLE-MAP.png);
+}
+
+.head-section p {
+	position: absolute;
+	font-size: 24px;
+	top: 40%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.location-section {
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background: linear-gradient(180deg, #e95714 48.96%, #ffff 48.97%);
+}
+
+.location-section .location-section-box1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	border: 1px solid #e95714;
+	height: 150px;
+	width: 350px;
+}
+
+.location-section .location-section-box2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	justify-content: top;
+	border: 1px solid #e95714;
+	width: 100%;
+	height: 150px;
+	padding: 0px 25px;
+	text-align: justify;
+	background: white;
+}
+.location-section .location-section-box1 img {
+	height: 100%;
+	background: #fbb144;
+}
+
+.cities {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	padding: 35px 70px 0px 70px;
+}
+
+.cities img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+}
+.location-section-box3 {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	background: #fbb144;
+	border: 3px solid #e95714;
+	width: 50%;
+	height: 100%;
+	padding: 0px;
+	margin: 5px;
+	position: relative;
+}
+
+.location-section-description {
+	display: flex;
+	color: white;
+
+	font-family: Verdana, sans-serif;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	background-color: #e95714;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #e95714;
+	overflow: hidden;
+	width: 100%;
+	height: 25%;
+	transition: 0.5s ease;
+}
+
+.location-section-box3:hover .location-section-description {
+	height: 100%;
+	background: #e95714;
+}
+
+.location-section-box3 .location-section-description p,
+.location-section-box3 .location-section-description iframe {
+	display: none;
+}
+
+.location-section-box3:hover .location-section-description iframe {
+	display: flex;
+	height: 70%;
+	width: 100%;
+}
+
+.location-section-box3:hover .location-section-description p {
+	display: flex;
+}
+
+.location-section-description p {
+	font-size: 16px;
+	justify-content: center;
+	align-content: flex-start;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+}
+.location-section-description p a {
+	display: flex;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	background: white;
+	line-height: 25px;
+}
+/*-----------------------------------------------------*/
+/* End of Location Page(location.html) style properties*/
+/*-----------------------------------------------------*/
+
 .contact-main-section {
 	background: #ffffff;
 	display: flex;
 	padding-top: 50px;
-
 	flex-direction: column;
 	color: rgb(0, 0, 0);
 	text-align: center;
@@ -95,7 +232,7 @@ footer {
 }
 
 .contact-main-section .bold {
-	color: white;
+	color: rgb(24, 9, 9);
 	font-weight: 700;
 }
 
@@ -135,39 +272,6 @@ footer {
 
 .contact img {
 	filter: invert();
-}
-.contact-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	padding: 50px 50px;
-	background: #ffffff;
-}
-
-.contact-section .contact-section-box1 {
-	display: flex;
-	flex-direction: column;
-	justify-content: right;
-	border: 1px solid #e95714;
-	height: 150px;
-	width: 350px;
-
-	color: var(--main-font-color);
-}
-.contact-section .contact-section-box2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	justify-content: center;
-	/* border: 1px solid white; */
-	width: 100%;
-	height: 150px;
-	padding: 0px 25px;
-
-	text-align: justify;
-	color: var(--main-font-color);
 }
 
 .form-main-section {
@@ -281,9 +385,9 @@ form {
 	text-align: center;
 }
 
-@media (max-width: 800px) {
-	.form-divider {
-		flex-direction: column;
+@media (max-width: 1000px) {
+	* {
+		font-size: 14px;
 	}
 	.location-section-box4 {
 		/* margin: 20px 0px 0px;
@@ -300,5 +404,44 @@ form {
 	iframe {
 		width: 100%;
 		height: 30%;
+	}
+	.cities {
+		flex-direction: column;
+	}
+	.cities .location-section-box3 {
+		width: 100%;
+	}
+}
+footer {
+	height: 50px;
+	background-color: #333;
+}
+@media (max-width: 800px) {
+	.location-section .location-section-box1 img {
+		height: 400px;
+		width: 100%;
+		background: #fbb144;
+	}
+	* {
+		font-size: 12px;
+	}
+	.cities {
+		flex-direction: column;
+	}
+	.cities .location-section-box3 {
+		width: 100%;
+	}
+	.location-box img {
+		display: none;
+	}
+	.form-divider {
+		flex-direction: column;
+	}
+	form {
+		width: 100%;
+	}
+	.location-box {
+		height: 10px;
+		width: 100%;
 	}
 }
