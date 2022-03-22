@@ -11,6 +11,44 @@
 		/>
 		<link rel="stylesheet" href="stylesheet.css" />
 		<title>Chinooks | Locations</title>
+		<style>
+			.ownerSection {
+				font-family: location-section, sans-serif;
+				flex-wrap: wrap;
+				padding: 60px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.branch {
+				width: 530px;
+				padding: 15px;
+				margin: 20px;
+			}
+
+			.branch-map-box {
+				margin-left: 5px;
+				float: left;
+				margin-right: 20px;
+			}
+
+			.branch .border {
+				color: white;
+				border-radius: 20px;
+				margin-top: 25px;
+				margin-left: 120px;
+
+				height: 150px;
+				width: 80%;
+				padding: 10px 10px 30px 120px;
+				background-color: #ff8638;
+			}
+
+			.border h2 {
+				margin-top: 10px;
+			}
+		</style>
 	</head>
 	<body>
 		<!--Header-->
@@ -29,9 +67,10 @@
 		</section>
 
 		<section class="main-section location-section">
-			<div class="location-section-box1">
-				<img src="assets/transparent-logo.png" alt="logo" />
-			</div>
+			<a href="assets/GOOGLE-MAP.png" target="popup" onclick="window.open('assets/GOOGLE-MAP.png','name','width=600,height=400')">
+				<div class="location-section-box1">
+					<img src="assets/GOOGLE-MAP.png" alt="logo" /></div
+			></a>
 			<div class="location-section-box2">
 				<h2>Ilocos Branches</h2>
 				<p>
@@ -41,69 +80,91 @@
 			</div>
 		</section>
 
-		<section class="main-section location-section1 cities">
-			<div class="location-section-box3">
-				<img src="assets/branches/Batac Branch.jpg" class="city-img" alt="logo" />
-				<div class="location-section-description city">
-					<h3>BATAC CITY BRANCH</h3>
-					<p>Brgy Ablan, City of Batac beside Enteng Cheesedesal</p>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d237.08158346379443!2d120.5631442!3d18.0574143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338ec18b19096873%3A0x2842a393e9badc7a!2sEnteng%20Cheesedesal%20Ablan%20Batac!5e0!3m2!1sen!2sph!4v1647013061367!5m2!1sen!2sph"
-						width="400"
-						height="300"
-						style="border: 0"
-						allowfullscreen=""
-						loading="lazy"
-					></iframe>
+		<section class="main-section ownerSection">
+			<div class="branch">
+				<div class="branch-map-box">
+					<img src="assets/branches/San Nicolas Branch.jpg" class="city-img" alt="logo" />
+					<div class="location-section-description city">
+						<img src="assets/branches/san-nicolas-map.png" alt="san-nicolas-map" />
+						<div class="location-section-description-button">
+							<a
+								href="https://goo.gl/maps/5uVwcSQoii9ETS6R8  "
+								target="popup"
+								onclick="window.open('https://goo.gl/maps/5uVwcSQoii9ETS6R8  ','name','width=600,height=400')"
+								>Go Google Map</a
+							>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="location-section-box3">
-				<img src="assets/branches/Laoag Branch.jpg" class="city-img" alt="logo" />
-				<div class="location-section-description city">
-					<h3>LAOAG CITY BRANCH</h3>
-					<p>Brgy. 12 Gen. Segundo Ave., near - Bacarra Road</p>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d473.75824563210915!2d120.6003623!3d18.2068922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338ec8a1f46dfc57%3A0x1e0823ad72722ada!2sKookee%20House!5e0!3m2!1sen!2sph!4v1647003018283!5m2!1sen!2sph"
-						width="600"
-						height="450"
-						style="border: 0"
-						allowfullscreen=""
-						loading="lazy"
-					></iframe>
-				</div>
-			</div>
-			<div class="location-section-box3">
-				<img src="assets/branches/San Nicolas Branch.jpg" class="city-img" alt="logo" />
-				<div class="location-section-description city">
-					<h3>SAN NICOLAS BRANCH</h3>
+				<div class="border">
+					<h2>San Nicolas Branch</h2>
 					<p>SAN NICOLAS (Brgy. 18 Bingao, neigbhor of De La Cruz Lutlong Bahay)</p>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.4040466687268!2d120.58341867357079!3d18.131513089389674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338ec6dca06c6895%3A0xbb50d7aa30ed1d43!2smidland%20terraces%20events%20place!5e0!3m2!1sen!2sph!4v1647008527959!5m2!1sen!2sph"
-						width="600"
-						height="450"
-						style="border: 0"
-						allowfullscreen=""
-						loading="lazy"
-					></iframe>
 				</div>
 			</div>
-			<div class="location-section-box3">
-				<img src="assets/branches/Pasuquin Branch.jpg" class="city-img" alt="logo" />
-				<div class="location-section-description city">
-					<h3>PASUQUIN BRANCH</h3>
+			<div class="branch">
+				<div class="branch-map-box">
+					<img src="assets/branches/Laoag Branch.jpg" alt="picture" />
+					<div class="location-section-description city">
+						<img src="assets/branches/laoag-map.png" alt="laoag-map" />
+						<div class="location-section-description-button">
+							<a
+								href="https://goo.gl/maps/HEYr4UVyjGP5QEZ98 "
+								target="popup"
+								onclick="window.open('https://goo.gl/maps/HEYr4UVyjGP5QEZ98 ','name','width=600,height=400')"
+								>Go Google Map</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="border">
+					<h2 class="nameOwner">Laoag City Branch</h2>
+					<p>Brgy. 12 Gen. Segundo Ave., near - Bacarra Road .</p>
+				</div>
+			</div>
+			<div class="branch">
+				<div class="branch-map-box">
+					<img src="assets/branches/Batac Branch.jpg" class="city-img" alt="logo" />
+					<div class="location-section-description city">
+						<img src="assets/branches/batac-map.png" alt="batac-map" />
+						<div class="location-section-description-button">
+							<a
+								href="https://goo.gl/maps/oPCJjP27F8jMB6sm7"
+								target="popup"
+								onclick="window.open('https://goo.gl/maps/oPCJjP27F8jMB6sm7','name','width=600,height=400')"
+								>Go Google Map</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<h2 class="nameOwner">Batac City Branch</h2>
+					<p>Brgy Ablan, City of Batac beside Enteng Cheesedesal</p>
+				</div>
+			</div>
+			<div class="branch">
+				<div class="branch-map-box">
+					<img src="assets/branches/Pasuquin Branch.jpg" class="city-img" alt="logo" />
+					<div class="location-section-description city">
+						<img src="assets/branches/pasuquin-map.png" alt="pasuquin-map" />
+						<div class="location-section-description-button">
+				
+
+							<a
+								href="https://goo.gl/maps/egX442A3Xn2GfLUo8"
+								target="popup"
+								onclick="window.open('https://goo.gl/maps/egX442A3Xn2GfLUo8','name','width=600,height=400')"
+								>Go Google Map</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<h2 class="nameOwner">Pasuquin Branch</h2>
 					<p>PASUQUIN (Poblacion 3, Maharlika Highway, near Vis A Vis)</p>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d473.4236264654771!2d120.6163204!3d18.3295289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338ecbb142453b8d%3A0x3e24c160dae6cddc!2sVis-a-Vis%20Lounge!5e0!3m2!1sen!2sph!4v1647002677804!5m2!1sen!2sph"
-						width="600"
-						height="450"
-						style="border: 0"
-						allowfullscreen=""
-						loading="lazy"
-					></iframe>
 				</div>
 			</div>
 		</section>
-
 		<div class="footer"></div>
 		<footer></footer>
 	</body>
