@@ -13,18 +13,24 @@
 		<title>Chinooks | Locations</title>
 		<style>
 			.ownerSection {
-				font-family: location-section, sans-serif;
 				flex-wrap: wrap;
-				padding: 60px;
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
 			}
 
 			.branch {
-				width: 530px;
-				padding: 15px;
-				margin: 20px;
+				width: 100%;
+				padding: 50px;
+				margin: 50px 0px;
+				position: relative;
+
+				height: 350px;
+				display: flex;
+				background-image: url(assets/GOOGLE-MAP.png);
+				align-items: center;
+
+				transition: 0.5s;
 			}
 
 			.branch-map-box {
@@ -38,14 +44,14 @@
 				border-radius: 20px;
 				margin-top: 25px;
 				margin-left: 120px;
+				margin-left: 264px;
 
-				height: 150px;
 				width: 80%;
 				padding: 10px 10px 30px 120px;
 				background-color: #ff8638;
 			}
 
-			.border h2 {
+			.border h3 {
 				margin-top: 10px;
 			}
 		</style>
@@ -55,14 +61,14 @@
 		<header class="header">
 			<img src="assets/transparent-logo.png" alt="logo" />
 			<ul>
-				<li><a href="">Home</a></li>
+				<li><a href="home.html">Home</a></li>
 				<li><a href="">Menu</a></li>
-				<li><a href="">Locations</a></li>
+				<li><a href="location.html">Locations</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="">About</a></li>
+				<li><a href="about.html">About</a></li>
 			</ul>
 		</header>
-		<section class="head-section">
+		<section class="head-section location-head">
 			<p>"We will deliver the finest for you wherever you are in Ilocos Norte and whenever you desire it."</p>
 		</section>
 
@@ -80,7 +86,7 @@
 			</div>
 		</section>
 
-		<section class="main-section ownerSection">
+		<section class="main-section branchSection">
 			<div class="branch">
 				<div class="branch-map-box">
 					<img src="assets/branches/San Nicolas Branch.jpg" class="city-img" alt="logo" />
@@ -97,7 +103,7 @@
 					</div>
 				</div>
 				<div class="border">
-					<h2>San Nicolas Branch</h2>
+					<h3>San Nicolas Branch</h3>
 					<p>SAN NICOLAS (Brgy. 18 Bingao, neigbhor of De La Cruz Lutlong Bahay)</p>
 				</div>
 			</div>
@@ -118,7 +124,7 @@
 				</div>
 
 				<div class="border">
-					<h2 class="nameOwner">Laoag City Branch</h2>
+					<h3 class="nameOwner">Laoag City Branch</h3>
 					<p>Brgy. 12 Gen. Segundo Ave., near - Bacarra Road .</p>
 				</div>
 			</div>
@@ -138,7 +144,7 @@
 					</div>
 				</div>
 				<div class="border">
-					<h2 class="nameOwner">Batac City Branch</h2>
+					<h3 class="nameOwner">Batac City Branch</h3>
 					<p>Brgy Ablan, City of Batac beside Enteng Cheesedesal</p>
 				</div>
 			</div>
@@ -148,8 +154,6 @@
 					<div class="location-section-description city">
 						<img src="assets/branches/pasuquin-map.png" alt="pasuquin-map" />
 						<div class="location-section-description-button">
-				
-
 							<a
 								href="https://goo.gl/maps/egX442A3Xn2GfLUo8"
 								target="popup"
@@ -160,7 +164,7 @@
 					</div>
 				</div>
 				<div class="border">
-					<h2 class="nameOwner">Pasuquin Branch</h2>
+					<h3 class="nameOwner">Pasuquin Branch</h3>
 					<p>PASUQUIN (Poblacion 3, Maharlika Highway, near Vis A Vis)</p>
 				</div>
 			</div>

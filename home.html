@@ -1,104 +1,99 @@
 <!-- @format -->
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-		<link rel="stylesheet" href="assets/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="stylesheet.css" />
 		<title>Chinooks</title>
 	</head>
 	<body>
-		<header>
-			<a href="#" class="logo"><img src="assets/logo.png" alt="logo" /></a>
-			<nav class="main-navigation">
-				<ul class="navigation">
-					<li>
-						<a href="home.html"><b>HOME</b></a>
-					</li>
-					<li>ABOUT</li>
-					<li>MENU</li>
-					<li>CONTACT</li>
-				</ul>
-				<div class="button-header">
-					<button>Log in</button>
-				</div>
-			</nav>
+		<header class="header">
+			<img src="assets/transparent-logo.png" alt="logo" />
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="location.html">Locations</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
 		</header>
-		<section class="homepage content">
-			<div class="homepage-content-box1">
-				<div class="up">
-					<div class="homepage-content-text">
-						<hgroup>
-							<h1>Chinese Style Roasted Chicken</h1>
-							<h4>Mapapasinok ka sa SARAP!!!</h4>
-						</hgroup>
-					</div>
-					<a class="to-shop big-button" href="<?php echo 'shop.php">Buy Now</a>
-				</div>
-				<div class="down">
-					<div class="social-media-links">
-						<a href="facebook.com"><img src="assets/twitter.svg" alt="twitter-logo" /></a>
-						<a href="facebook.com"><img src="assets/fb.svg" alt="fb-logo" /></a>
-						<a href="facebook.com"><img src="assets/instagram.svg" alt="instagram-logo" /></a>
-					</div>
-				</div>
-			</div>
-			<div class="center">
-				<!-- will do it later -->
 
-				<img src="assets/chicken.png" />
+		<section class="home-section home-about">
+			<div class="row">
+				<div class="column1">
+					<div class="imgBx">
+						<img src="assets/chicken.png" />
+					</div>
+				</div>
+				<div class="column1">
+					<h2 class="titleText">CHINOOKS</h2>
+					<p>
+						It was January 2014 when Chinooks Roast & Fried Chicken was first introduced in the market. Founded by a Chinese Entrepreneur named Mr.
+						Bernard Chua, the brand was launched as a mom-and-pop set up selling fried chicken in a busy street of Malabon City
+					</p>
+					<br />
+					<p>
+						In the year 2018, the owner began to offer roasted chicken. The simple idea behind the name CHINOOKS was the word combination of "Chinese
+						and Manok" and Roast & Fried Chicken as we offer both fried and roasted chicken.
+					</p>
+					<br />
+				</div>
 			</div>
 		</section>
-		<section class="recommendation section box-content">
-			<div class="recommendation-main">
-				<div class="big-box specialty specialty1">
-					<img src="assets/chicken.png" alt="Notebook" style="width: 100%" />
-					<div class="content">
-						<h5>Chinese Style Roasted Chicken</h5>
-						<p>Lorem ipsum..</p>
+		<section class="home-section home-about" style="padding-top: 0">
+			<div class="row">
+				<div class="column1">
+					<h2 class="titleText">We aim</h2>
+					<span>MISSION</span>
+					<br />
+					To give Convenient service and delicious roasted chicken in the mouth of the customer in every soft bite.
+					<br /><br />
+					<span>VISION</span>
+					<br />
+					To become one of Favorite and most recognized roasted chicken company around the world. A roasted chicken of chinooks is what we are
+					introduce.
+					<br /><br />
+				</div>
+				<div class="column1">
+					<div class="imgBx">
+						<img src="assets/branches/Batac Branch.jpg" style="filter: none" />
 					</div>
 				</div>
-				<div class="small-box specialty specialty2">
-					<img src="assets/chicken.png" alt="Notebook" style="width: 100%" />
-					<div class="content">
-						<h5>Heading</h5>
-						<p>Lorem ipsum..</p>
+			</div>
+		</section>
+		<section class="home-section home-location">
+			<div class="row">
+				<div class="column2">
+					<div class="imgBx">
+						<img src="assets/GOOGLE-MAP.png" />
 					</div>
 				</div>
-
-				<div class="small-box specialty specialty3">
-					<img src="assets/chicken.png" alt="Notebook" style="width: 100%" />
-					<div class="content">
-						<h5>Heading</h5>
-						<p>Lorem ipsum..</p>
+				<div class="column2">
+					<h2 class="titleText">Ilocos Branches</h2>
+					<p>
+						Ilocos Branches Chinooks actually offers several sites and branches in Ilocos Norte for you to come visit and appreciate our products,
+						featuring two in Batac City and one each in San Nicolas, Batac, and Pasuquin.
+					</p>
+					<a href="location.html" class="button-white">Go Nearby</a>
+				</div>
+			</div>
+		</section>
+		<section class="home-section home-section home-contact">
+			<div class="row" style="flex-direction: column">
+				<div class="column2">
+					<h2 class="titleText">Get In Touch</h2>
+					<p>We will not only serve the greatest roasted chicken to you, but we will also provide the best for you to reach us.</p>
+					<a href="contact.html" class="button-orange">Reach us</a>
+				</div>
+				<div class="column2">
+					<div class="imgBx">
+						<img src="assets/IMG_20220324_214652.jpg" />
 					</div>
 				</div>
-				<div class="x-small-box specialty view-all">
-					<img src="assets/chicken.png" alt="Notebook" style="width: 100%" />
-					<div class="content">
-						<a>view all</a>
-						<p>Lorem ipsum..</p>
-					</div>
-				</div>
-
-				<!-- <div class="recommendation-main">
-				<div class="big-box specialty specialty4">
-					<img src="assets/chicken.png" alt="Notebook" style="width: 100%" />
-					<div class="content">
-						<h1>Heading</h1>
-						<p>Lorem ipsum..</p>
-					</div>
-				</div>
-				<div class="small-box specialty specialty5">
-					<img src="assets/chicken.png" alt="Notebook" style="width: 100%" />
-					<div class="content">
-						<h1>Heading</h1>
-						<p>Lorem ipsum..</p>
-					</div>
-				</div> -->
 			</div>
 		</section>
 	</body>
